@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import colorlessConsole from "../public/images/controller.png";
-import coloredConsole from "../public/images/controller (1).png";
+import colorlessConsole from "./images/controller.png";
+import coloredConsole from "./images/controller (1).png";
 import ToolIcons from "./ToolIcons";
 
 function Skill() {
@@ -39,7 +39,11 @@ function Skill() {
           )}
         </Col>
         <Col className="skill-display" md={12} lg={12}>
-          {isHovered ? <ToolIcons /> : <p className="alignment">Hover over me for more!</p>}
+          {isHovered ? (
+            <ToolIcons />
+          ) : (
+            <p className="alignment">Hover over me for more!</p>
+          )}
         </Col>
       </Row>
     </Container>

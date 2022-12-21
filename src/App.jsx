@@ -5,7 +5,7 @@ import Header from "./Header";
 import Button from "react-bootstrap/Button";
 import Skill from "./Skill";
 import Projects from "./Projects";
-import tonkotsu from "../public/images/2250403.png";
+import tonkotsu from "./images/2250403.png";
 
 function App() {
   return (
