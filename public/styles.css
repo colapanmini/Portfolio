@@ -1,0 +1,92 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Navbar */
+
+.navigation-bar {
+  padding: 8px 10px 8px 10px;
+}
+
+/* Component 1 */
+.top-compartment {
+  padding: 140px 60px 60px 100px;
+  height: 500px;
+  position: relative;
+}
+
+.katsu-img {
+  position: absolute;
+  left: 50%;
+  transform: rotate(-7deg);
+  bottom: -11%;
+}
+
+@media (max-width: 576px) {
+  .katsu-img {
+    position: absolute;
+    left: 30%;
+    transform: rotate(-7deg);
+    bottom: -11%;
+  }
+}
+
+/* Skill Component */
+.skill-title {
+  margin-bottom: 50px;
+}
+
+.slanted-background {
+  margin-top: 30px;
+  padding-top: 100px;
+  text-align: center;
+  position: relative; /* Makes it possible to position the pseudo-element absolutely */
+}
+
+.slanted-background::before {
+  content: ""; /* This is required to display the pseudo-element */
+  position: absolute; /* Makes it possible to position the pseudo-element absolutely */
+  top: 0; /* Positions the pseudo-element at the top of the parent element */
+  left: 0; /* Positions the pseudo-element at the left of the parent element */
+  height: 600px; /* Makes the pseudo-element stretch the full height of the parent element */
+  /* height adjusted from 100% to a set height instead because we do not want weird auto-stretch behavior */
+  width: 100%; /* Makes the pseudo-element stretch the full width of the parent element */
+  background-color: #d39f93f8;
+  color: #444;
+  transform: skewY(
+    -7deg
+  ); /* Skews the pseudo-element along the Y-axis by -15 degrees */
+  z-index: -1; /* Makes the pseudo-element appear behind the child elements */
+}
+
+.console-icon {
+  width: 200px;
+}
+
+.skill-display {
+  position: relative;
+  height: 300px;
+}
+
+.alignment {
+}
+
+.skill-icons {
+  width: 50px;
+  margin-bottom: 50px;
+}
+
+/* Projects Section */
+.projects-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.project-desc {
+  margin: auto;
+}
+
+.card-block {
+  margin: auto;
+}
