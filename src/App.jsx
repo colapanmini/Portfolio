@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Skill from "./Skill";
 import Projects from "./Projects";
 import tonkotsu from "./images/2250403.png";
+import About from "./About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </Container>
       <Skill />
       <Projects />
+      <About />
       {/* <div class="bubble"></div> */}
       {/* <Slideshow /> */}
     </div>
