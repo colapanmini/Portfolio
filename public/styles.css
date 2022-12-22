@@ -69,9 +69,6 @@
   height: 300px;
 }
 
-.alignment {
-}
-
 .skill-icons {
   width: 50px;
   margin-bottom: 50px;
@@ -89,4 +86,66 @@
 
 .card-block {
   margin: auto;
+}
+
+/* About Section */
+
+.slanted-bg-2 {
+  margin-top: 30px;
+  padding-top: 100px;
+  position: relative; /* Makes it possible to position the pseudo-element absolutely */
+}
+
+.slanted-bg-2::before {
+  content: ""; /* This is required to display the pseudo-element */
+  position: absolute; /* Makes it possible to position the pseudo-element absolutely */
+  top: 0; /* Positions the pseudo-element at the top of the parent element */
+  left: 0; /* Positions the pseudo-element at the left of the parent element */
+  height: 600px; /* Makes the pseudo-element stretch the full height of the parent element */
+  /* height adjusted from 100% to a set height instead because we do not want weird auto-stretch behavior */
+  width: 100%; /* Makes the pseudo-element stretch the full width of the parent element */
+  background-color: #d39f93f8;
+  color: #444;
+  transform: skewY(
+    -7deg
+  ); /* Skews the pseudo-element along the Y-axis by -15 degrees */
+  z-index: -1; /* Makes the pseudo-element appear behind the child elements */
+}
+
+@media (max-width: 991px) {
+  .slanted-bg-2::before {
+    height: 700px;
+  }
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-row {
+  text-align: center;
+}
+
+.star-icon {
+  height: 250px;
+}
+
+.col-custom {
+  height: 220px;
+}
+
+@media (min-width: 992px) {
+  .star-icon {
+    padding-left: 220px;
+  }
+
+.about-text {
+  display: inline-block;
+  text-align: left;
+}
+
+.about-title {
+  margin-bottom: 50px;
+}
 }
