@@ -7,6 +7,7 @@ import Skill from "./Skill";
 import Projects from "./Projects";
 import tonkotsu from "./images/2250403.png";
 import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Skill />
       <Projects />
       <About />
+      <Contact />
       {/* <div class="bubble"></div> */}
       {/* <Slideshow /> */}
     </div>

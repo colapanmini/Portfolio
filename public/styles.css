@@ -94,6 +94,7 @@
   margin-top: 30px;
   padding-top: 100px;
   position: relative; /* Makes it possible to position the pseudo-element absolutely */
+  margin-bottom: 200px;
 }
 
 .slanted-bg-2::before {
@@ -164,4 +165,22 @@
   .star-icon {
     margin-bottom
   }
+}
+
+/* Contact Me Section */
+.contact-me-container {
+  width:60%;
+}
+
+.contact-me-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.custom-text-area {
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
+  text-align: center;
 }
