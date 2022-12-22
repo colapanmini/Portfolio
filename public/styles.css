@@ -112,9 +112,15 @@
   z-index: -1; /* Makes the pseudo-element appear behind the child elements */
 }
 
-@media (max-width: 991px) {
+@media (min-width: 424px) and (max-width: 620px) {
   .slanted-bg-2::before {
-    height: 700px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 424px) {
+  .slanted-bg-2::before {
+    height: 900px;
   }
 }
 
@@ -129,10 +135,11 @@
 
 .star-icon {
   height: 250px;
+  margin-bottom: 30px;
 }
 
 .col-custom {
-  height: 220px;
+  height: 280px;
 }
 
 @media (min-width: 992px) {
@@ -148,4 +155,13 @@
 .about-title {
   margin-bottom: 50px;
 }
+}
+
+@media (min-width: 620px) and (max-width: 992px) {
+  .slanted-bg-2::before {
+    height: 700px;
+  }
+  .star-icon {
+    margin-bottom
+  }
 }
