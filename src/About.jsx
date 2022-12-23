@@ -3,7 +3,7 @@ import katsuebi from "./images/katsuebi.png";
 
 function About() {
     return (
-        <Container fluid className="slanted-bg-2">
+        <Container fluid id="about" className="slanted-bg-2">
             <h1 className="about-title">About Me</h1>
             <Row className="about-row">
             <Col className="col-custom" lg={6} md={12}>

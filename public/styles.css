@@ -11,9 +11,33 @@
 
 /* Component 1 */
 .top-compartment {
-  padding: 140px 60px 60px 100px;
+  padding: 160px 60px 60px 200px;
   height: 500px;
   position: relative;
+}
+
+@media (min-width: 640px) and (max-width: 1160px) {
+  .top-compartment {
+    padding: 160px 60px 60px 150px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 640px) {
+  .top-compartment {
+    padding: 160px 60px 60px 120px;
+  }
+}
+
+@media (min-width: 478px) and (max-width: 576px) {
+  .top-compartment {
+    padding: 160px 60px 60px 100px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 478px) {
+  .top-compartment {
+    padding: 160px 60px 0px 40px;
+  }
 }
 
 .katsu-img {
@@ -162,14 +186,11 @@
   .slanted-bg-2::before {
     height: 700px;
   }
-  .star-icon {
-    margin-bottom
-  }
 }
 
 /* Contact Me Section */
 .contact-me-container {
-  width:60%;
+  width: 60%;
   margin-bottom: 50px;
 }
 

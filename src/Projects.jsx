@@ -4,7 +4,7 @@ import { Navbar, Container, Row, Col } from "react-bootstrap";
 
 function Projects() {
   return (
-    <Container>
+    <Container fluid id="projects">
       <h1 className="projects-title">Projects</h1>
       <Row>
         <Col lg={6} md={6}>

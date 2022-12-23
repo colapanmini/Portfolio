@@ -32,7 +32,7 @@ function Contact() {
   };
 
   return (
-    <Container fluid className="contact-me-container">
+    <Container fluid id="contact" className="contact-me-container">
       {sendStatus === 200 ? (
         <div className="statbox">
           <h1 className="contact-me-title">Contact Me</h1>

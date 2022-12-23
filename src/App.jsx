@@ -16,9 +16,9 @@ function App() {
       <Header />
       <Container fluid className="top-compartment">
         <h1>Hi! I am lawlaw, I am a Junior Front End Developer</h1>
-        <Button variant="outline-dark">About</Button>
-        <Button variant="outline-dark">Project</Button>
-        <Button variant="outline-dark">Contact</Button>
+        <Button variant="outline-dark" href="#projects">Projects</Button>
+        <Button variant="outline-dark" href="#about">About</Button>
+        <Button variant="outline-dark" href="#contact">Contact</Button>
         <img className="katsu-img" src={tonkotsu} alt="katsu-img" />
       </Container>
       <Skill />
