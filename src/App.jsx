@@ -8,6 +8,7 @@ import Projects from "./Projects";
 import tonkotsu from "./images/2250403.png";
 import About from "./About";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
       {/* <div class="bubble"></div> */}
       {/* <Slideshow /> */}
     </div>

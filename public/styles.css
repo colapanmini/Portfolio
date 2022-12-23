@@ -170,6 +170,7 @@
 /* Contact Me Section */
 .contact-me-container {
   width:60%;
+  margin-bottom: 50px;
 }
 
 .contact-me-title {
@@ -183,4 +184,24 @@
 
 .button-wrapper {
   text-align: center;
+}
+
+.status-img {
+  width: 150px;
+}
+
+.statbox {
+  height: 452px;
+  text-align: center;
+}
+
+/* Footer Section */
+.site-footer {
+  height: 150px;
+  color: white;
+  text-align: center;
+}
+
+.copyright-text {
+  padding-top: 75px;
 }
