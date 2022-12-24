@@ -11,7 +11,7 @@ function Header() {
       bg="dark"
       variant="dark"
     >
-      <Navbar.Brand href="#">React App</Navbar.Brand>
+      <Navbar.Brand href="#">LT</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
         id="responsive-navbar-nav"

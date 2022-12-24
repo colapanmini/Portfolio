@@ -12,33 +12,41 @@ function ToolIcons() {
   return (
     <Container>
       <Row>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={HTMLIcon} alt="html-icon" />
+          <p className="icon-desc">HTML</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={CSSIcon} alt="css-icon" />
+          <p className="icon-desc">CSS</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={JSIcon} alt="js-icon" />
+          <p className="icon-desc">JavaScript</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img
             className="skill-icons"
             src={BootstrapLogo}
             alt="bootstrap-icon"
           />
+          <p className="icon-desc">Bootstrap</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={GitIcon} alt="git-icon" />
+          <p className="icon-desc">Git</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={ReactIcon} alt="react-icon" />
+          <p className="icon-desc">React</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={EJSIcon} alt="ejs-icon" />
+          <p className="icon-desc">EJS</p>
         </Col>
-        <Col lg={3} md={3} sm={3} xs={3}>
+        <Col className="align-self-end" lg={3} md={3} sm={3} xs={3}>
           <img className="skill-icons" src={NodeJSLogo} alt="nodejs-icon" />
+          <p className="icon-desc">NodeJS</p>
         </Col>
       </Row>
     </Container>
