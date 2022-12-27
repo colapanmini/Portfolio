@@ -5,7 +5,7 @@ import Header from "./Header";
 import Button from "react-bootstrap/Button";
 import Skill from "./Skill";
 import Projects from "./Projects";
-import tonkotsu from "./images/2250403.png";
+import puppy from "./images/puppy.png";
 import About from "./About";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -19,7 +19,7 @@ function App() {
         <Button variant="outline-dark" href="#projects">Projects</Button>
         <Button variant="outline-dark" href="#about">About</Button>
         <Button variant="outline-dark" href="#contact">Contact</Button>
-        <img className="katsu-img" src={tonkotsu} alt="katsu-img" />
+        <img className="katsu-img" src={puppy} alt="katsu-img" />
       </Container>
       <Skill />
       <Projects />

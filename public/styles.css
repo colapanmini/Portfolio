@@ -45,6 +45,7 @@
   left: 50%;
   transform: rotate(-7deg);
   bottom: -11%;
+  width: 200px;
 }
 
 @media (max-width: 576px) {

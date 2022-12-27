@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import katsuebi from "./images/katsuebi.png";
+import shark from "./images/shark.png";
 
 function About() {
     return (
@@ -7,7 +7,7 @@ function About() {
             <h1 className="about-title">About Me</h1>
             <Row className="about-row">
             <Col className="col-custom" lg={6} md={12}>
-            <img className="star-icon" src={katsuebi} alt="star-icon" />
+            <img className="star-icon" src={shark} alt="star-icon" />
             </Col>
             <Col className="col-custom-text" lg={6} md={12}>
             <p className="about-text"> Prior to tech, I worked in the Palm Oil Sector as a Sustainability Certification Officer. The work involved both facilitating as well as conducting audits to ensure a smooth certification process for the company's products.</p>
