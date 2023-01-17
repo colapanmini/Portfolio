@@ -3,8 +3,14 @@ import { Container, Form, Button, FloatingLabel } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
 import errormark from "./images/close.png";
 import checkmark from "./images/correct.png";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
+  const [ref4, inView4] = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   const [sendStatus, setSendStatus] = useState(0);
 
   const form = useRef();
@@ -32,7 +38,14 @@ function Contact() {
   };
 
   return (
-    <Container fluid id="contact" className="contact-me-container">
+    <Container
+      fluid
+      id="contact"
+      ref={ref4}
+      className={`contact-me-container hidden-animation ${
+        inView4 ? "show" : ""
+      }`}
+    >
       {sendStatus === 200 ? (
         <div className="statbox">
           <h1 className="contact-me-title">Contact Me</h1>

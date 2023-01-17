@@ -3,8 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import colorlessConsole from "./images/controller.png";
 import coloredConsole from "./images/controller (1).png";
 import ToolIcons from "./ToolIcons";
+import { useInView } from "react-intersection-observer";
 
 function Skill() {
+  const [ref1, inView1] = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   const [isHovered, setHovered] = React.useState(false);
 
   function handleHover() {
@@ -16,7 +22,13 @@ function Skill() {
   }
 
   return (
-    <Container fluid className="slanted-background">
+    <Container
+      fluid
+      ref={ref1}
+      className={`hidden-animation-about slanted-background ${
+        inView1 ? "show-about" : ""
+      }`}
+    >
       <h1 className="skill-title">Skills</h1>
       <Row>
         <Col md={12} lg={12}>
